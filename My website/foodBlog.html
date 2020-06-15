@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+
+</head>
+
+  <body>
+     <header class= "foodBlog_header">
+          <div class="menu_tab">
+              <ul>
+                  <li><a href="index.html">Home </a></li>
+                  <li><a href="aboutme.html">About Me </a></li>
+                  <li><a href="travel.html">Travel </a></li>
+                  <li class = "active"><a href="foodBlog.html">Food Blog </a></li>
+                  <li><a href="baking.html">Baking </a></li>
+                  <li><a href="interests.html">Interests </a></li>
+                  <li><a href="workshop.html">Workshops </a></li>
+                  <li><a href="project.html">Project </a></li>
+                  <li > <a href="contact.html"> Contact </a></li>
+              </ul>
+        </div>
+
+        <div class= "blog_intro">
+            <p>My family loved to try different cuisines and appreciate food from various cultures.
+            So During my high school I started a food blog instagram page to keep track of the different restaurants that I tried and also gave a descriptive review of my experience there.
+            Soon I got recognition from other restaurants who invited me for tasting sessions to review their food.</p><br>
+            <a href="https://www.instagram.com/delectable.clicksdxb/" target="_blank">
+                <img alt="instagram" src="insta2.png" height="100">
+            </a>
+            <a href="https://www.zomato.com/FriendlyReviewe/foodjourney" target="_blank">
+                <img alt="instagram" src="zomato.svg" height="90">
+            </a>
+
+                <div class="reviews">
+                    <p>Choose a restaurant to see its detailed review:</p>
+                    <input type="radio" id="social_house" name="restaurant" value="Social House" onclick="review()"> Social House </input>
+                    <input type="radio" id="masala_wok" name="restaurant" value="Masala Wok" onclick="review()"> Masala Wok </input>
+                    <input type="radio" id="cereal" name="restaurant" value="Cereal Killer Cafe" onclick="review()"> Cereal Killer Cafe </input>
+                    <p id = "choosenRes"> </p>
+
+                </div>
+        </div>
+
+    </header>

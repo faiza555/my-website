@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+
+</head>
+
+  <body class="bake_header">
+     <header >
+          <div class="menu_tab">
+              <ul>
+                  <li><a href="index.html">Home </a></li>
+                  <li><a href="aboutme.html">About Me </a></li>
+                  <li><a href="travel.html">Travel </a></li>
+                  <li><a href="foodBlog.html">Food Blog </a></li>
+                  <li class = "active" ><a href="baking.html">Baking</a></li>
+                  <li ><a href="interests.html">Interests </a></li>
+                  <li><a href="workshop.html">Workshops </a></li>
+                  <li><a href="project.html">Project </a></li>
+                  <li > <a href="contact.html"> Contact </a></li>
+              </ul>
+        </div>
+    </header>
+
+    <div class="bakeintro">
+        My mother has taught me how to bake.
+        <br>Since my parents are both diabetic, we make <br>  bakery items at home.<br>
+        In home made baked items, we have control over <br> the sugar quantity.
+        Multi grain bread is mother's <br> speciality and we bake it every two weeks.<br><br>
+        I will share some of my mother's secret recipes <br>  here which you all can refer to ,
+        to bake your <br> own healthy version.
+
+        </div><br><br><br><br>
+<div class="recepi">
+    <div id="myBtnContainer" style="text-align:center">
+      <button class="btn active2" onclick="filterSelection('all')"> Show all</button>
+      <button class="btn" onclick="filterSelection('Cookies')"> Cookies</button>
+      <button class="btn" onclick="filterSelection('Desserts')"> Desserts</button>
+      <button class="btn" onclick="filterSelection('Buns')"> Buns</button>
+    </div>
+
+
+
+    <!-- Portfolio Gallery Grid -->
+    <div class="row">
+      <div class="column Cookies">
+        <div class="content">
+          <img src="cookie.PNG" alt="Cookies1" onclick="cookie1()" style="width:80%">
+          <h4>Vanilla Cookies</h4>
+        </div>
+
+            <div id="myModal1" class="modal">
+                <!-- Modal content -->
+                <div class="modal-content" >
+                    <h4>Ingredients</h4><br>
+                    <div id="myUL">
+                        <p >250 grams (2 cups) of all purpose flour</p>
+                        <p >60 grams low fat unsalted butter</p>
+                        <p>1 egg (lightly beaten)</p>
+                        <p>40 grams of light sugar</p>
+                        <p>40 grams honey</p>
+                        <p>1 tsp vanilla extract</p>
+                    </div>
+                </div>
+            </div>
+      </div>
+
+      <div class="column Cookies">
+        <div class="content">
+        <img src="cookie2.jpg" alt="Cookies2"  onclick="cookie2()"  style="width:80%">
+          <h4>Oatmeal Cookies</h4>
+        </div>
+        <div id="myModal2" class="modal">
+            <!-- Modal content -->
+            <div class="modal-content" >
+                <h4>Ingredients</h4><br>
+                <div id="myUL">
+                    <p > 1 1/4 cups quick oats </p>
+                    <p>1 large egg</p>
+                    <p >1 cup white whole wheat flour</p>
+                    <p> 1 1/2 teaspoons baking powder</p>
+                    <p>1 1/2 teaspoons cinnamon</p>
+                    <p>1/2 teaspoon kosher salt</p>
+                    <p>4 tablespoons unsalted butter, melted and cooled</p>
+                    <p> 1 teaspoon pure vanilla extract</p>
+                    <p>1/2 cup honey</p>
+                </div>
+            </div>
+        </div>
+        </div>
+
+        <div class="column Desserts">
+   <div class="content">
+     <img src="dessert.jpg" alt="Desserts1" onclick="dessert1()" style="width:80%">
+     <h4>Cinnamon Rolls</h4>
+   </div>
+   <div id="myModal3" class="modal">
+       <!-- Modal content -->
+       <div class="modal-content" >
+           <h4>Ingredients</h4><br>
+           <div id="myUL">
+               <p > 2 cups all-purpose flour </p>
+               <p>2 tablespoons white sugar</p>
+               <p >2 teaspoons baking powder</p>
+               <p> 1 teaspoon salt</p>
+               <p>3 tablespoons butter, softened</p>
+               <p> 3/4 cup milk</p>
+               <p>1 egg</p>
+               <p> 1 teaspoon pure vanilla extract</p>
+               <p>1 tablespoon ground cinnamon</p>
+           </div>
+       </div>
+   </div>
+ </div>
+
+ <div class="column Desserts">
+   <div class="content">
+   <img src="dessert2.jpg" alt="Desserts2"  onclick="dessert2()"style="width:80%">
+     <h4>Souffle</h4>
+   </div>
+   <div id="myModal4" class="modal">
+       <!-- Modal content -->
+       <div class="modal-content" >
+           <h4>Ingredients</h4><br>
+           <div id="myUL">
+               <p > 2 tbsp butter </p>
+               <p>2 tbsp all-purpose flour</p>
+               <p>1/2 tsp salt</p>
+               <p> Pinch pepper</p>
+               <p>3/4 cup milk</p>
+               <p>4	egg yolks</p>
+               <p>2	egg white</p>
+               <p> 1/4 tsp cream of tartar</p>
+           </div>
+       </div>
+   </div>
+   </div>
+
+   <div class="column Buns">
+  <div class="content">
+    <img src="bun.jpg" alt="Buns1"  onclick="bun1()" style="width:80%">
+    <h4>Cheese Buns</h4>
+  </div>
+</div>
+<div class="column Buns">
+  <div class="content">
+  <img src="bun2.jpg" alt="Buns2" onclick="bun2()" style="width:80%">
+    <h4>Plain Buns</h4>
+  </div>
+</div>
+
+</div>
+</div>
+
+</body>
+</html>
+
+
+<script>
+filterSelection("all")
+function filterSelection(choosenBtn) {
+  var allItems;
+  allItems = document.getElementsByClassName("column");
+  if (choosenBtn == "all") choosenBtn = "";
+  for (var i = 0; i < allItems.length; i++) {
+    filter(allItems[i], "show");
+    if (allItems[i].className.indexOf(choosenBtn) > -1) all(allItems[i], "show");
+  }
+}
+
+function all(element, name) {
+  var  bakedCategoryArr, displayArr;
+  bakedCategoryArr = element.className.split(" ");
+  displayArr = name.split(" ");
+  for (var i = 0; i < displayArr.length; i++) {
+    if (bakedCategoryArr.indexOf(displayArr[i]) == -1) {element.className += " " + displayArr[i];}
+  }
+}
+
+function filter(element, name) {
+  var  bakedCategoryArr, displayArr;
+  bakedCategoryArr = element.className.split(" ");
+  displayArr = name.split(" ");
+  for (var i = 0; i < displayArr.length; i++) {
+    while (bakedCategoryArr.indexOf(displayArr[i]) > -1) {
+      bakedCategoryArr.splice(bakedCategoryArr.indexOf(displayArr[i]), 1);
+    }
+  }
+  element.className = bakedCategoryArr.join(" ");
+}
+
+
+// Add active class to the current button (highlight it)
+var btnContainer = document.getElementById("myBtnContainer");
+var btns = btnContainer.getElementsByClassName("btn");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function(){
+    var current = document.getElementsByClassName("active2");
+    current[0].className = current[0].className.replace(" active2", "");
+    this.className += " active2";
+  });
+}
+
+// Get the modal
+var modal1 = document.getElementById("myModal1");
+var modal2 = document.getElementById("myModal2");
+var modal3 = document.getElementById("myModal3");
+var modal4 = document.getElementById("myModal4");
+// Get the button that opens the modal
+//var btn = document.getElementById("myBtn");
+
+
+// When the user clicks the button, open the modal
+ function cookie1(){
+  modal1.style.display = "block";
+}
+function cookie2(){
+ modal2.style.display = "block";
+}
+function dessert1(){
+ modal3.style.display = "block";
+}
+function dessert2(){
+ modal4.style.display = "block";
+}
+function bun1(){
+ modal.style.display = "block";
+}
+function bun2(){
+ modal.style.display = "block";
+}
+
+
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal1) {
+    modal1.style.display = "none";
+  }
+  if (event.target == modal2) {
+    modal2.style.display = "none";
+  }
+  if (event.target == modal3) {
+    modal3.style.display = "none";
+  }
+  if (event.target == modal4) {
+    modal4.style.display = "none";
+  }
+}
+
+//////////////
+
+var items = document.getElementsByTagName("p");
+//console.log(items);
+for (var i = 0; i < items.length; i++) {
+  items[i].addEventListener('click', function(e){
+      if(e.target.style.textDecoration !=="line-through"){
+      e.target.style.textDecoration="line-through";
+      e.target.style.color="black";}
+      else {e.target.style.textDecoration="none";
+      e.target.style.color="#EAE7D3";}
+      })
+  }
+
+</script>
+
+
+
+<style>
+* {
+  box-sizing: border-box;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+
+h1 {
+  font-size: 50px;
+  word-break: break-all;
+}
+
+/* Add padding BETWEEN each column */
+.row,
+.row > .column {
+  padding: 14px;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+  float: right;
+  color: #EAE7D3;
+  width: 33%;
+  display: none; /* Hide all elements by default */
+}
+
+/* Clear floats after rows */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Content */
+.content {
+  background-image: bake_header;
+  padding: 10px;
+}
+
+/* The "show" class is added to the filtered elements */
+.show {
+  display: block;
+}
+
+/* Style the buttons */
+.btn {
+  border: none;
+  outline: none;
+  padding: 12px 16px;
+  background-color: white;
+  cursor: pointer;
+  margin-left: 10px;
+
+}
+
+.btn:hover {
+  background-color: #ddd;
+}
+
+.btn.active2 {
+  background-color: #666;
+  color: white;
+}
+
+
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #7b3f00;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+
+
+
+
+</style>
